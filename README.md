@@ -1,10 +1,8 @@
 # Java Verse Bank
-
 Este documento tem como objetivo detalhar, por meio de casos de uso, requisitos, diagrama de classes, considerações sobre as classes, limitações e considerações relacionadas ao JavaVerse Bank. Trata-se de um pequeno sistema de CRUD que simula algumas etapas do sistema bancário, como criação, edição, atualização, remoção e listagem de clientes, contas correntes e contas poupança. Estas últimas também possuem métodos para saque e depósito. O programa foi desenvolvido para atender a necessidades específicas e fornecer funcionalidades de acordo com o escopo definido para este projeto. A seguir, apresentamos uma descrição abrangente do software, juntamente com as informações relevantes.
 
 
 ## Arquitetura de Sistemas
-
 A arquitetura do sistema foi organizada levando em consideração a divisão em camadas:  _DAO_  (_Data Access Object_),  _Domain_  (ou modelo) e  _Service_. Sua implementação foi feita utilizando a linguagem de programação orientada a objetos, Java.
 -   **Camada DAO**  : Essa camada é responsável por mapear e realizar o acesso aos dados, orientando a execução das consultas no banco de dados e encapsulando a persistência dos dados. Ela fornece métodos para inserir, atualizar, remover e recuperar informações;
 -   **Camada Domain**  : Nessa camada, temos as entidades do sistema, com atributos e métodos diretamente relacionados à lógica de negócio. As entidades presentes nesse sistema são: clientes, conta, conta corrente e conta poupança; e
@@ -18,7 +16,6 @@ Em síntese, o principal objetivo da adoção dessa arquitetura foi separar as r
 
 
 ## Requisitos do Sistema
-
 ### - Requisitos funcionais
 | |                                                                                                               |
 |------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,8 +47,6 @@ Em síntese, o principal objetivo da adoção dessa arquitetura foi separar as r
       
 
 ### - Requisitos não funcionais
-
-
 | |                                                                                                                            |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | RNF1  | Todas as operações realizadas devem ser salvas no banco de dados.   
@@ -69,13 +64,11 @@ Em síntese, o principal objetivo da adoção dessa arquitetura foi separar as r
 
 
 ## Diagrama de Classe
-
 O presente diagrama de classe inclui as seguintes classes: Cliente, Conta,Conta Corrente e Conta Poupança. A classe Cliente possui atributos nome e CPF e com modificadores de acessos privados. A classe abstrata Conta tem atributos protegidos que são número, CPF e saldo. Já a classe Conta Corrente e Conta Poupança herdam Conta possuem atributos privados de exclusivo como cheque especial (Conta Corrente) e taxa de juros (Conta Poupança).
 
 ![Diagrama de classe do sistema](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/package.png)
 
 ## Uso do Software
-
 O presente programa possibilita ao usuário interagir com diferentes opções de um menu que permite executar ações intrinsecamente relacionadas às entidades Cliente, Conta Corrente e Conta Poupança.
 
 A entrada de dados é feita por meio do console, utilizando a classe Scanner, que pode ser coordenada por três serviços:  _ClienteService, ContaCorrenteService_  e  _ContaPoupancaService._  Cada um desses serviços é responsável por executar operações para suas respectivas entidades: Cliente, Conta Corrente e Conta Poupança.
@@ -86,7 +79,6 @@ Vale destacar que alguns métodos auxiliares para exibir o menu, bem como alguns
 
 
 ## Limitações, Problemas e Segurança
-
  1. O sistema não abarca todas as funcionalidades de um sistema bancário real;
  2. Não foi implementado no sistema a possibilidade de transferência de recursos entre contas;
  3. O sistema não foi testado para lidar com um grande volume de dados e operações de forma simultânea;
@@ -95,10 +87,11 @@ Vale destacar que alguns métodos auxiliares para exibir o menu, bem como alguns
  5. O sistema expõe algumas informações sensíveis.
 
 ## Classes 
-#### Pacote Domain
+### - Pacote Domain  
 ![Pacote Domain](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/packageDomain.png)
 
-#### Pacote DAO
+### - Pacote DAO
 ![Pacote Dao](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/packageDao.png)
-#### Pacote Service
+
+### - Pacote Service
 ![Pacote Service](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/packageService.png)
