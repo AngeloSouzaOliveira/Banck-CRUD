@@ -11,7 +11,7 @@ A arquitetura do sistema foi organizada levando em consideração a divisão em 
 Em síntese, o principal objetivo da adoção dessa arquitetura foi separar as responsabilidades do sistema, o que proporciona uma série de vantagens, como facilidade de manutenção, legibilidade, extensibilidade, entre outras possíveis.
 
 #### Diagrama de fluxo da informação na arquitetura
-![Diagrama de fluxo da informação na arquitetura.](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/Diagrama%20sem%20nome.drawio.png)
+![Diagrama de fluxo da informação na arquitetura.](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/2f3c17de08e2dfeb4e067f4b93884fd268ad7b35/images_doc/fluxo.png)
 
 
 
@@ -66,7 +66,7 @@ Em síntese, o principal objetivo da adoção dessa arquitetura foi separar as r
 ## Diagrama de Classe
 O presente diagrama de classe inclui as seguintes classes: Cliente, Conta,Conta Corrente e Conta Poupança. A classe Cliente possui atributos nome e CPF e com modificadores de acessos privados. A classe abstrata Conta tem atributos protegidos que são número, CPF e saldo. Já a classe Conta Corrente e Conta Poupança herdam Conta possuem atributos privados de exclusivo como cheque especial (Conta Corrente) e taxa de juros (Conta Poupança).
 
-![Diagrama de classe do sistema](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/package.png)
+![Diagrama de classe do sistema](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/2f3c17de08e2dfeb4e067f4b93884fd268ad7b35/images_doc/diagrama_classe.png)
 
 ## Uso do Software
 O presente programa possibilita ao usuário interagir com diferentes opções de um menu que permite executar ações intrinsecamente relacionadas às entidades Cliente, Conta Corrente e Conta Poupança.
@@ -88,10 +88,10 @@ Vale destacar que alguns métodos auxiliares para exibir o menu, bem como alguns
 
 ## Classes 
 ### - Pacote Domain  
-![Pacote Domain](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/packageDomain.png)
+![Pacote Domain](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/2f3c17de08e2dfeb4e067f4b93884fd268ad7b35/images_doc/packageDomain.png)
 
 ### - Pacote DAO
-![Pacote Dao](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/packageDao.png)
+![Pacote Dao](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/2f3c17de08e2dfeb4e067f4b93884fd268ad7b35/images_doc/packageDao.png)
 
 ### - Pacote Service
-![Pacote Service](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/da3f2bfe7d8a2e7c1f090e18f390530d528b810b/packageService.png)
+![Pacote Service](https://github.com/AngeloSouzaOliveira/Banck-CRUD/blob/2f3c17de08e2dfeb4e067f4b93884fd268ad7b35/images_doc/packageService.png)
